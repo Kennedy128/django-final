@@ -9,7 +9,7 @@ class ProfileTestClass(TestCase):
     test class to test methods of the profile class
     '''
     def setUp(self):
-        self.profile=Profile(user="victor",profile_pic="pic",bio="person",contacts='vicmongz254@gmail.com')
+        self.profile=Profile(user="kennedy",profile_pic="pic",bio="person",contacts='kennedymbithi12@gmail.com')
 
     def test_save_method(self):
         self.profile.save_profile()
@@ -26,7 +26,7 @@ class ProjectTestClass(TestCase):
     test class to test methods of the  Project class
     '''
     def setUp(self):
-        self.profile=Profile(user="victor",profile_pic="pic",bio="person",contacts="vicmongz254@gmail.com")
+        self.profile=Profile(user="kennedy",profile_pic="pic",bio="person",contacts="kennedymbithi12@gmail.com")
         self.project=Project(image="image",title="image",description="nice",link='https;//image',profile=self.profile)
 
     def test_save_method(self):

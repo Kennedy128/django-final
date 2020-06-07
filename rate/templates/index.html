@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
+{{block.super}}
+<div class="container">
+  <br>
+  <br>
+  <h1 class="text-center"><u>RATE APP</u></h1>
+  <blockquote class="text-center"><cite class="text-center">Rate and review apps here</cite></blockquote>
+  
+  <br />
+  <div class="row">
+  {%if posts%}
+  {% for post in posts %}
+  
+    <div class="col-md-4">
+     <div class="card">
+       <div class="card-title">
+         <h4 class="text-center">{{post.title}}</h4>
+       </div>
+      <img src="{{post.image.url}}" class="card-img-top"  style="width:100%;max-width:600px;padding-top:10px;height: 300px;">
+      <a class="align-right" href="{%url 'project' post.id%}"><h4 class="text-center">MORE ABOUT WEBSITE</h4> </a>
+      </div>
+      <br>
+    </div>
+    
+  {% endfor%}   
+  {% else%} 
+  <h1>There are no projects posted</h1>
+  {% endif %}
+   </div> 
+</div>
+
+
+{% endblock %}

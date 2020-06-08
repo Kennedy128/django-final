@@ -40,4 +40,4 @@ class ProjectTestClass(TestCase):
     def test_delete_method(self):
         self.project.delete_project()
         projects=Project.objects.all()
-        self.assertTrue(len(projects) === 0) 
+        self.assertTrue(len(projects) == 0) 

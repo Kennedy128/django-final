@@ -38,7 +38,7 @@ Prerequisites The user will require git, django, postgres and python3.6 installe
 To access this application on your command line, you need to clone it git clone https://github.com/Kennedy128/django-final.git to acces my live deployed site visit https://kennedy-rating.herokuapp.com/accounts/login/?next=/
 
 # Known Bugs
-currently there are no known bugs
+currently there are no known bugs.incase of any problem or query contact me through kennedymbithi12@gmail.com
 
 # Licence
 This project is under the MIT licence
